@@ -8,6 +8,8 @@
     color: white;
     align-items: center;
     text-align: center;
+    justify-items: center;
+    justify-content: center;
     text-decoration: underline;
     background-color: red;
     width: 100vw;
@@ -23,24 +25,28 @@ body{
     background: rgb(0, 100, 0);
     width: 100vw;
     text-align: center;
-    display: flex;
-    align-items: center;
+    align-content: center;
+   
+    
 }
 .menu-bar ul{
     display:flex;
     flex-direction: column;
     list-style: none;
     color: #fff;
+   align-items: center;
 }
 .menu-bar ul li{
     width: 120px;
-    margin: 15px;
+    color: #fff;
     padding: 10px;
-    display: flex;
+    text-align: center;
+   
 }
 .menu-bar ul li a{
     text-decoration: none;
     color: #fff;
+    
 }
 .active, .menu-bar ul li:hover{
     background: #2bab0d;
@@ -50,34 +56,48 @@ body{
 .menu-bar .bi{
     margin-right: 5px;
 }
-.sub-menu-1{
+/* .sub-menu-1{
     display: none;
+} */
+.back{
+    background-color:#2bab0d ;
+    color: #fff;
+    
+}
+.back:hover{
+    background-color:#2bab0d ;
+    color: white;
+    
 }
 .menu-bar ul li:hover .sub-menu-1{
 
     display:block;
+    
     position: absolute;
     background: rgb(0, 100, 0);
     margin-top: 15px;
-    margin-left: 60px;
+    /* margin-left: 60px; */
    
 }
  .menu-bar ul li:hover .sub-menu-1 ul{
     display: block;
     margin: 20px;
+    text-align: center;
+    align-items: center;
 }
 .menu-bar ul li:hover .sub-menu-1 ul li{
-   width: 200px;
+   width: 250px;
    padding: 20px;
    border-bottom: 1px dotted #fff;
    background: transparent;
    border-radius: 0;
    text-align: left;
    display: block;
+   
 }
 .menu-bar ul li:hover .sub-menu-1 ul li:last-child{
     border-bottom: none;
-    
+   
 }
 .menu-bar ul li:hover .sub-menu-1 ul li{
     color: #b2ff00;
@@ -133,4 +153,11 @@ body{
 .dropdown:hover .dropdown-content{
     display: block;
 }
-
+@media(max-width:460px){
+    
+        .Oil{
+            height: auto;
+            width:auto;
+        }
+    
+}
